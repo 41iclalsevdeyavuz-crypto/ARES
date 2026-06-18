@@ -1,2 +1,11 @@
 # Autonomous-Room-Mapping-Rover
-A mini autonomous rover that explores indoor spaces, avoids obstacles, and builds a basic occupancy grid map.
+An autonomous robot capable of:
+
+- Obstacle avoidance
+- Indoor exploration
+- Occupancy grid mapping
+- Room size estimation
+- Free area detection
+
+Status:
+FSM V1 completed.
