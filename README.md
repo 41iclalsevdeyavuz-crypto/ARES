@@ -29,9 +29,6 @@ Controls the robot's movement, including forward motion, backward motion, and tu
 
 Maintains a map of the explored environment. It stores information about free space, obstacles, and visited locations.
 
-### DecisionMaker
-
-Analyzes sensor data and map information to select the most appropriate action, such as choosing a direction or avoiding obstacles.
 
 Status:
 FSM V1 completed.
