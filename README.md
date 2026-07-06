@@ -1,34 +1,56 @@
-# Autonomous-Room-Mapping-Rover
-An autonomous robot capable of:
+# ARES — Autonomous Rescue & Exploration System
 
-- Obstacle avoidance
-- Indoor exploration
-- Occupancy grid mapping
-- Room size estimation
-- Free area detection
+ARES is an autonomous indoor exploration rover project designed for GPS-denied environments.
+
+The current version is a C++ terminal simulation that models the robot's decision-making architecture using:
+
+- Finite State Machine based navigation
+- Object-oriented C++ design
+- Simulated distance sensing
+- Simulated motor control
+- Dynamic occupancy grid mapping
+- Autonomous sense-decide-act cycles
+
+---
+
+## Project Goal
+
+The long-term goal of ARES is to build a small autonomous rover that can explore unknown indoor environments, avoid obstacles, and create a basic map of the explored area.
+
+This makes the project relevant to scenarios such as:
+
+- GPS-denied indoor navigation
+- Search and rescue exploration
+- Disaster-area scouting
+- Embedded autonomous systems
+- Robotics software architecture
+
+---
+
+## Current Version: V1 Terminal Simulation
+
+V1 focuses on the software architecture before moving to hardware.
+
+The robot currently runs in a terminal simulation where synthetic sensor values are injected and the system performs autonomous decision cycles.
+
+### Implemented in V1
+
+- Finite State Machine navigation
+- Simulated front, left and right distance readings
+- Simulated motor actions
+- Dynamic occupancy grid map
+- Map expansion when the robot reaches grid boundaries
+- Object-oriented separation of responsibilities
+
+---
 
 ## System Architecture
 
-### Robot
+ARES is designed as a set of independent components coordinated by the Robot class.
 
-The main controller of the system. It coordinates all components, manages the exploration process, and executes the robot's mission.
-
-### StateMachine
-
-Controls the robot's behavior using a finite state machine (FSM). It determines which action the robot should perform based on sensor inputs and current conditions.
-
-### DistanceSensor
-
-Measures distances to obstacles and provides environmental information used for navigation and decision-making.
-
-### MotorController
-
-Controls the robot's movement, including forward motion, backward motion, and turning maneuvers.
-
-### OccupancyGridMap
-
-Maintains a map of the explored environment. It stores information about free space, obstacles, and visited locations.
-
-
-Status:
-FSM V1 completed.
+```text
+Robot
+├── DistanceSensor
+├── StateMachine
+├── MotorController
+└── OccupancyGridMap
