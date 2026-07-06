@@ -1,17 +1,23 @@
 # ARES — Autonomous Rescue & Exploration System
+Building autonomous robots from software architecture to real-world exploration.
 
-ARES is an autonomous indoor exploration rover project designed for GPS-denied environments.
+ARES (Autonomous Rescue & Exploration System) is a modular autonomous robotics platform developed to explore unknown environments, starting from software simulation and evolving into a real embedded robotic system.
 
-The current version is a C++ terminal simulation that models the robot's decision-making architecture using:
+The project began as a simple terminal-based room exploration simulation to strengthen object-oriented software design and finite state machine architecture. As the project evolved, its scope expanded beyond simulation into a long-term robotics platform targeting autonomous exploration in GPS-denied indoor environments.
 
-- Finite State Machine based navigation
-- Object-oriented C++ design
-- Simulated distance sensing
-- Simulated motor control
-- Dynamic occupancy grid mapping
-- Autonomous sense-decide-act cycles
+Rather than focusing only on making the robot move, ARES emphasizes software architecture first. The navigation logic, sensing, mapping and motor control are intentionally separated into independent modules so that the same software can later be transferred to real hardware with minimal changes.
 
----
+Current Capabilities
+
+✓ Finite State Machine based navigation
+
+✓ Dynamic Occupancy Grid Mapping
+
+✓ Modular Object-Oriented Architecture
+
+✓ Autonomous Sense → Decide → Act cycle
+
+✓ Hardware abstraction layer for future Arduino integration
 
 ## Project Goal
 
