@@ -1,62 +1,31 @@
-# ARES — Autonomous Rescue & Exploration System
-Building autonomous robots from software architecture to real-world exploration.
+# ARES
 
-ARES (Autonomous Rescue & Exploration System) is a modular autonomous robotics platform developed to explore unknown environments, starting from software simulation and evolving into a real embedded robotic system.
+> **Autonomous Rescue & Exploration System**
 
-The project began as a simple terminal-based room exploration simulation to strengthen object-oriented software design and finite state machine architecture. As the project evolved, its scope expanded beyond simulation into a long-term robotics platform targeting autonomous exploration in GPS-denied indoor environments.
+### Building autonomous robots from software architecture to real-world exploration.
 
-Rather than focusing only on making the robot move, ARES emphasizes software architecture first. The navigation logic, sensing, mapping and motor control are intentionally separated into independent modules so that the same software can later be transferred to real hardware with minimal changes.
+⚠️ **Status:** Active Development (V1 Completed)
 
-Current Capabilities
+ARES is a long-term robotics platform focused on building an autonomous robot capable of exploring unknown indoor environments without relying on GPS.
 
-✓ Finite State Machine based navigation
+Unlike projects that start directly with hardware, ARES begins with a software-first approach. The goal is to build a modular architecture where navigation, sensing, mapping, and motor control evolve independently before being integrated into a physical robot.
 
-✓ Dynamic Occupancy Grid Mapping
-
-✓ Modular Object-Oriented Architecture
-
-✓ Autonomous Sense → Decide → Act cycle
-
-✓ Hardware abstraction layer for future Arduino integration
-
-## Project Goal
-
-The long-term goal of ARES is to build a small autonomous rover that can explore unknown indoor environments, avoid obstacles, and create a basic map of the explored area.
-
-This makes the project relevant to scenarios such as:
-
-- GPS-denied indoor navigation
-- Search and rescue exploration
-- Disaster-area scouting
-- Embedded autonomous systems
-- Robotics software architecture
+Current version: **V1 Terminal Simulation**
 
 ---
 
-## Current Version: V1 Terminal Simulation
+## Current Capabilities
 
-V1 focuses on the software architecture before moving to hardware.
+✔ Finite State Machine (FSM) navigation
 
-The robot currently runs in a terminal simulation where synthetic sensor values are injected and the system performs autonomous decision cycles.
+✔ Dynamic Occupancy Grid Mapping
 
-### Implemented in V1
+✔ Modular Object-Oriented C++ Architecture
 
-- Finite State Machine navigation
-- Simulated front, left and right distance readings
-- Simulated motor actions
-- Dynamic occupancy grid map
-- Map expansion when the robot reaches grid boundaries
-- Object-oriented separation of responsibilities
+✔ Autonomous Sense → Decide → Act cycle
+
+✔ Hardware-independent software layer
 
 ---
 
-## System Architecture
-
-ARES is designed as a set of independent components coordinated by the Robot class.
-
-```text
-Robot
-├── DistanceSensor
-├── StateMachine
-├── MotorController
-└── OccupancyGridMap
+**Next milestone:** Arduino-based autonomous rover (V2)
