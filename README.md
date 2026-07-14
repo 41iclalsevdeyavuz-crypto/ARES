@@ -65,6 +65,20 @@ Each class has a single responsibility, making the project scalable and suitable
 
 ---
 
+# Simulation
+
+The current version of ARES includes a complete terminal-based simulation of the autonomous exploration process.
+
+The simulation demonstrates the robot's decision-making cycle, finite state machine execution, occupancy grid updates, and autonomous navigation behavior before deploying the software to real hardware.
+
+<p align="center">
+  <img src="media/simulation.gif" width="700" alt="ARES V1 Simulation">
+</p>
+
+The simulation follows the same software architecture that will later be deployed on the Arduino-based robot, making it an important validation step before hardware integration.
+
+---
+
 ## Features
 
 - Modular OOP architecture
