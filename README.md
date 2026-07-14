@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 > 🚧 **This project is under active development.**
 >
 > ARES is being developed incrementally. Every major design decision, implementation step, and engineering challenge is documented in the Development Diary.
