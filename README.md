@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="images/hero_banner.png" width="1000" alt="ARES Hero Banner">
+</p>
 
 > 🚧 **This project is under active development.**
 >
