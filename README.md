@@ -1,34 +1,154 @@
-# Autonomous-Room-Mapping-Rover
-An autonomous robot capable of:
+> 🚧 **This project is under active development.**
+>
+> ARES is being developed incrementally. Every major design decision, implementation step, and engineering challenge is documented in the Development Diary.
+# ARES
+### Autonomous Robotics Exploration System
 
-- Obstacle avoidance
-- Indoor exploration
-- Occupancy grid mapping
-- Room size estimation
-- Free area detection
+> A modular autonomous mobile robot developed from scratch to explore unknown indoor environments using finite state machines, object-oriented software architecture, and occupancy grid mapping.
 
-## System Architecture
+---
 
-### Robot
+## Overview
 
-The main controller of the system. It coordinates all components, manages the exploration process, and executes the robot's mission.
+ARES is a long-term robotics project that combines software engineering, embedded systems, and autonomous navigation.
 
-### StateMachine
+The primary objective is to design a robot capable of exploring an unknown indoor environment, avoiding obstacles, building an occupancy grid map, and making navigation decisions autonomously.
 
-Controls the robot's behavior using a finite state machine (FSM). It determines which action the robot should perform based on sensor inputs and current conditions.
+The project is being developed incrementally through multiple versions, allowing every stage of the design process to be documented and improved.
 
-### DistanceSensor
+---
 
-Measures distances to obstacles and provides environmental information used for navigation and decision-making.
+## Current Status
 
-### MotorController
+**Current Version:** V1 — Software Simulation
 
-Controls the robot's movement, including forward motion, backward motion, and turning maneuvers.
+Current progress includes:
 
-### OccupancyGridMap
+- Finite State Machine (FSM)
+- Object-Oriented Software Architecture
+- Terminal-based Robot Simulation
+- Occupancy Grid Mapping
+- Navigation Logic
+- Development Diary
+- Hardware Research
 
-Maintains a map of the explored environment. It stores information about free space, obstacles, and visited locations.
+---
 
+## Project Roadmap
 
-Status:
-FSM V1 completed.
+| Version | Status | Description |
+|----------|--------|-------------|
+| V1 | ✅ Completed | Software simulation and architecture |
+| V2 | 🟡 In Progress | Arduino integration |
+| V3 | ⬜ Planned | Autonomous exploration with real sensors |
+| V4 | ⬜ Planned | STM32 migration and advanced navigation |
+
+---
+
+## Software Architecture
+
+ARES is built using a modular object-oriented architecture.
+
+Core classes include:
+
+- Robot
+- StateMachine
+- DistanceSensor
+- MotorController
+- OccupancyGridMap
+
+Each class has a single responsibility, making the project scalable and suitable for future hardware integration.
+
+---
+
+## Features
+
+- Modular OOP architecture
+- Finite State Machine (FSM)
+- Autonomous navigation logic
+- Occupancy Grid Mapping
+- Dynamic map expansion
+- Hardware-independent software design
+- Arduino-ready architecture
+- Future STM32 compatibility
+
+---
+
+## Technologies
+
+- C++
+- Object-Oriented Programming
+- Finite State Machines
+- Occupancy Grid Mapping
+- Arduino
+- Embedded Systems
+- Robotics
+
+---
+
+## Repository Structure
+
+```text
+ARES/
+│
+├── docs/
+│   ├── architecture/
+│   ├── development-diary/
+│   ├── diagrams/
+│   └── reports/
+│
+├── images/
+├── media/
+├── src/
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+## Development Diary
+
+The complete development process is documented from the very first sketch to hardware implementation.
+
+Topics include:
+
+- Planning
+- Software Architecture
+- FSM Design
+- Occupancy Grid Mapping
+- Hardware Research
+- Design Decisions
+- Engineering Challenges
+
+---
+
+## Future Development
+
+Upcoming milestones include:
+
+- Arduino implementation
+- Real ultrasonic sensor integration
+- Real motor control
+- Indoor autonomous exploration
+- Mapping optimization
+- STM32 migration
+- Sensor fusion
+- Path planning
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+Developed by **İclal Sevde Yavuz**
+
+Computer Engineering Student
+
+Kadir Has University
